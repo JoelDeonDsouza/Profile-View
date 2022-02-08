@@ -67,7 +67,9 @@ export default function App() {
           </View>
 
           <TouchableOpacity style={styles.button}>
-            <Text style={styles.textFill}>Hire</Text>
+            <Text style={styles.textFill} onPress={() => this.changeColor()}>
+              Hire
+            </Text>
           </TouchableOpacity>
         </ScrollView>
       </SafeAreaView>
@@ -165,7 +167,7 @@ const styles = StyleSheet.create({
     marginTop: 10
   },
   textFill: {
-    marginLeft: 11,
+    marginLeft: 10,
     color: "white",
     fontWeight: "600"
   }
